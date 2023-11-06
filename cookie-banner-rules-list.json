@@ -37,6 +37,15 @@
       }
     },
     {
+      "id": "cookiebar",
+      "domains": [],
+      "click": {
+        "optIn": "#cookie-bar #cb-enable",
+        "optOut": "#cookie-bar #cb-disable",
+        "presence": "#cookie-bar"
+      }
+    },
+    {
       "id": "cookiebot",
       "domains": [],
       "click": {
@@ -5459,6 +5468,50 @@
         "optOut": ".fc-cta-do-not-consent",
         "optIn": ".fc-cta-consent",
         "presence": ".fc-dialog-container"
+      }
+    },
+    {
+      "id": "04fc24cc-a0f4-405a-9419-42b315d1de60",
+      "domains": ["raumplaner-online.de"],
+      "cookies": {
+        "optOut": [
+          {
+            "name": "dp_cookieconsent_status",
+            "value": "{\"status\":\"approved\",\"checkboxes\":[{\"name\":\"statistics\",\"checked\":false},{\"name\":\"marketing\",\"checked\":false}]}"
+          }
+        ]
+      }
+    },
+    {
+      "id": "5d3219b2-ed27-4dd3-97bc-9cdf79a2e374",
+      "domains": ["stellwerksim.de"]
+      "cookies": {
+        "optIn": [
+          {
+            "name": "cb-enabled",
+            "value": "accepted"
+          }
+        ],
+        "optOut": [
+          {
+            "name": "cb-enabled",
+            "value": "declined"
+          }
+        ]
+      },
+      "click": {
+        "optIn": "#cookie-bar #cb-enable",
+        "optOut": "#cookie-bar #cb-disable",
+        "presence": "#cookie-bar"
+      }
+    },
+    {
+      "id": "6efc41d8-3ca9-4bc6-8e9f-5490849e5aa4",
+      "domains": ["hamburgenergie.de"],
+      "click": {
+        "optIn": "#uc-btn-accept-banner",
+        "optOut": ".uc-save-settings-button",
+        "presence": "#usercentrics-button"
       }
     }
   ]
